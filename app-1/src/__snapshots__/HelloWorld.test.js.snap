@@ -1,0 +1,24 @@
+exports[`function HelloWorld(props) {/* istanbul ignore next */_classCallCheck(this, HelloWorld);
+        // constructor for parent
+        var _this = _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).call(this, props)); /* istanbul ignore next */_this.state = { greeting: 'Hello' };
+        /* istanbul ignore next */_this.frenchify = /* istanbul ignore next */_this.frenchify.bind( /* istanbul ignore next */_this); // bind the event to an instance This tells Javascript “Hey, any time you see a reference to this inside of the frenchify function, I want you specifically to refer to ME.” 
+        /* istanbul ignore next */_this.removeGreeting = /* istanbul ignore next */_this.removeGreeting.bind( /* istanbul ignore next */_this); /* istanbul ignore next */return _this;
+    } renders and matches our snapshot 1`] = `
+<div
+  className="HelloWorld">
+  Hello
+   
+  Person
+  <br />
+  <button
+    className="frenchify"
+    onClick={[Function]}>
+    Frenchify!
+  </button>
+  <button
+    className="remove"
+    onClick={[Function]}>
+    Remove Me!
+  </button>
+</div>
+`;

@@ -1,0 +1,19 @@
+exports[`function AddGreeter(props) {/* istanbul ignore next */_classCallCheck(this, AddGreeter);var _this = _possibleConstructorReturn(this, (AddGreeter.__proto__ || Object.getPrototypeOf(AddGreeter)).call(this,
+        props));
+        /* istanbul ignore next */_this.state = { greetingName: '' };
+        /* istanbul ignore next */_this.handleUpdate = /* istanbul ignore next */_this.handleUpdate.bind( /* istanbul ignore next */_this);
+        /* istanbul ignore next */_this.addGreeting = /* istanbul ignore next */_this.addGreeting.bind( /* istanbul ignore next */_this); /* istanbul ignore next */return _this;
+    } renders and matches our snapshot 1`] = `
+<div
+  className="AddGreeter">
+  <input
+    onChange={[Function]}
+    type="text"
+    value="" />
+    
+  <button
+    onClick={[Function]}>
+    Add
+  </button>
+</div>
+`;
