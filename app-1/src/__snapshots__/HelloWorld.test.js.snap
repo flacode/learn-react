@@ -1,0 +1,45 @@
+exports[`class HelloWorld extends /* istanbul ignore next */_react.Component {
+
+    constructor(props) {
+        super(props); // constructor for parent
+        this.state = { greeting: 'Hello' };
+        this.frenchify = this.frenchify.bind(this); // bind the event to an instance This tells Javascript “Hey, any time you see a reference to this inside of the frenchify function, I want you specifically to refer to ME.” 
+        this.removeGreeting = this.removeGreeting.bind(this);
+    }
+
+    frenchify() {
+        this.setState({ greeting: 'Bonjour' });
+    }
+
+    removeGreeting() {
+        this.props.removeGreeting(this.props.name);
+    }
+
+    render() {
+        return (
+            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: 'HelloWorld', __source: { fileName: _jsxFileName, lineNumber: 23 }, __self: this },
+                this.state.greeting, /* istanbul ignore next */' ', this.props.name,
+                /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'br', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 25 }, __self: this }),
+                /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ className: 'frenchify', onClick: this.frenchify, __source: { fileName: _jsxFileName, lineNumber: 26 }, __self: this }, /* istanbul ignore next */'Frenchify!'),
+                /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ className: 'remove', onClick: this.removeGreeting, __source: { fileName: _jsxFileName, lineNumber: 27 }, __self: this }, /* istanbul ignore next */'Remove Me!')));
+
+
+    }} renders and matches our snapshot 1`] = `
+<div
+  className="HelloWorld">
+  Hello
+   
+  Person
+  <br />
+  <button
+    className="frenchify"
+    onClick={[Function]}>
+    Frenchify!
+  </button>
+  <button
+    className="remove"
+    onClick={[Function]}>
+    Remove Me!
+  </button>
+</div>
+`;
