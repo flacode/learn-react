@@ -35,6 +35,7 @@ describe(HelloWorldList, () => {
     it('adds another greeting when the add greeting function is called', () => {
       const before = component.find(HelloWorld).length;
       component.instance().addGreeting('Sample');
+      component.update();
       const after = component.find(HelloWorld).length;
       expect(after).toBeGreaterThan(before);
     });
@@ -43,6 +44,7 @@ describe(HelloWorldList, () => {
       const before = component.find(HelloWorld).length;
       const removeMe = component.state('greetings')[0];
       component.instance().removeGreeting(removeMe);
+      component.update();
       const after = component.find(HelloWorld).length;
       expect(after).toBeLessThan(before);
     });
